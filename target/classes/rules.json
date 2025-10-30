@@ -1,0 +1,26 @@
+[
+  {
+    "id": "date.getYear",
+    "kind": "MethodCall",
+    "match": "getYear",
+    "description": "Method Date.getYear()",
+    "replacementExpression": "(%s.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate().getYear())",
+    "imports": ["java.time.ZoneId"]
+  },
+  {
+    "id": "new.URL.string",
+    "kind": "ObjectCreation",
+    "match": "URL",
+    "description": "Constructor new URL(String)",
+    "replacementExpression": "new java.net.URI(%s).toURL()",
+    "imports": ["java.net.URI"]
+  },
+  {
+    "id": "types.stringbuffer",
+    "kind": "VariableType",
+    "match": "StringBuffer",
+    "description": "Type StringBuffer should be StringBuilder",
+    "replacementType": "StringBuilder",
+    "imports": []
+  }
+]
