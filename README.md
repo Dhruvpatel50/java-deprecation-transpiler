@@ -37,7 +37,7 @@ This project offers an automated, intelligent alternative to these challenges.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/java-deprecation-transpiler.git](https://github.com/your-username/java-deprecation-transpiler.git)
+    git clone https://github.com/Dhruvpatel50/java-deprecation-transpiler.git
     cd java-deprecation-transpiler
     ```
 
